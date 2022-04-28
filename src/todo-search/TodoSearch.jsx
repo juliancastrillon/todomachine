@@ -3,7 +3,7 @@ import './TodoSearch.css';
 
 const TodoSearch = () => {
     return (
-        <input placeholder='Inicio de mi carrera' />
+        <input className="TodoSearch" placeholder='Inicio de mi carrera' />
     )
 }
 export default TodoSearch;

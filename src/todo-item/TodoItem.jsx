@@ -3,10 +3,10 @@ import './TodoItem.css';
 
 const TodoItem = (props) => {
     return (
-        <li>
-            <span>C</span>
-            <p>{props.text}</p>
-            <span>X</span>
+        <li className="TodoItem" >
+            <span className={`Icon icon-check ${props.completed && 'Icon-check--active'}`} >C</span>
+            <p className={`TodoItem-p ${props.completed && 'TodoItem-p--complete'} `}  >{props.text}</p>
+            <span className="Icon Icon-delete" >X</span>
         </li>
     )
 }

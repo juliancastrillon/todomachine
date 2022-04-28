@@ -4,7 +4,6 @@ import TodoCounter from "./todo-counter/TodoCounter";
 import TodoItem from "./todo-item/TodoItem";
 import TodoSearch from "./todo-search/TodoSearch";
 import TodoList from "./todolist/TodoList";
-
 // import './App.css';
 
 const todos = [
@@ -20,7 +19,11 @@ function App(props) {
     <TodoSearch /> 
     <TodoList >
       {todos.map(todo => (
-    <TodoItem key={todo.text} text={todo.text} />))}
+    <TodoItem 
+    key={todo.text} 
+    text={todo.text} 
+    completed={todo.completed}
+    />))}
     </TodoList>  
     <CreateTodoButton /> 
   </React.Fragment>
